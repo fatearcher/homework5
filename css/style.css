@@ -188,6 +188,16 @@ div#center {
   letter-spacing: 2px;
 }
 
+#castmain h3 {
+  /* border: 1px red solid; */
+  color: #ffbb00;
+  width: 400px;
+  margin: 60px 0px;
+  font-size: 40px;
+
+  font-family: 'PT Serif', serif;
+}
+
 #castmain p {
   font-size: large;
   width: 530px;
@@ -203,8 +213,11 @@ div#center {
 }
 
 #castmain section {
-  margin: 100px;
+  margin-top: 30px;
+  margin-bottom: 140px;
 }
+
+
 
 .cop,
 .cop2,
@@ -221,4 +234,17 @@ div#center {
   position: absolute;
   top: 70px;
   z-index: -1;
+}
+
+.list-mv01 {
+  transition: .8s;
+  opacity: 0;
+  transform: translate(0, 60px);
+  -webkit-transform: translate(0, 60px);
+}
+
+.mv01 {
+  opacity: 1.0;
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
 }

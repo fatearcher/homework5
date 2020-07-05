@@ -7,6 +7,19 @@
     <title>Document</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+    <script>
+        $(function () {
+            $('.list-mv01').on('inview', function (event, isInView, visiblePartX, visiblePartY) {
+                if (isInView) {
+                    $(this).stop().addClass('mv01');
+                } else {
+                    $(this).stop().removeClass('mv01');
+                }
+            });
+        });
+    </script>
 </head>
 
 <body style="background-color: black;">
@@ -30,6 +43,7 @@
     </video>
 
     <main id="castmain">
+        <h3>MAIN CAST:</h3>
         <section class="cop">
             <img src="image/cast1.jpg" alt="">
             <div>
@@ -58,7 +72,7 @@
             </div>
         </section>
 
-        <section class="cop4">
+        <section class="cop4 list-mv01">
             <img src="image/cast5.jpg" alt="">
             <div>
                 <h2>Michael Caine </h2>
@@ -68,7 +82,7 @@
             </div>
         </section>
 
-        <section class="cop5">
+        <section class="cop5 list-mv01">
             <img src="image/cast4.jpg" alt="">
             <div>
                 <h2>Mackenzie Foy </h2>
