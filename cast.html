@@ -1,95 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script
+      type="text/javascript"
+      src="  https://code.jquery.com/jquery-latest.min.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
     <script>
-        $(function () {
-            $('.list-mv01').on('inview', function (event, isInView, visiblePartX, visiblePartY) {
-                if (isInView) {
-                    $(this).stop().addClass('mv01');
-                } else {
-                    $(this).stop().removeClass('mv01');
-                }
-            });
+      $(function () {
+        $(".list-mv01").on("inview", function (
+          event,
+          isInView,
+          visiblePartX,
+          visiblePartY
+        ) {
+          if (isInView) {
+            $(this).stop().addClass("mv01");
+          } else {
+            $(this).stop().removeClass("mv01");
+          }
         });
+      });
     </script>
-</head>
+  </head>
 
-<body style="background-color: black;">
+  <body style="background-color: black;">
     <header>
-        <img src="image/logo2.png" alt="" class="logo">
-        <nav>
-            <ul class="navlinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cast.html">cast</a></li>
-                <li><a href="">Introduction</a></li>
-                <li><a href="">Story</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="cta"><button id="navbutton">content</button></a>
+      <img src="image/logo2.png" alt="" class="logo" />
+      <nav>
+        <ul class="navlinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cast.html">cast</a></li>
+          <li><a href="">Introduction</a></li>
+          <li><a href="">Story</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="cta"><button id="navbutton">content</button></a>
     </header>
 
-
-
     <video id="videoBG" poster="" autoplay muted loop>
-        <source src="bg4.mp4" type="video/mp4">
+      <source src="video/bg4.mp4" type="video/mp4" />
     </video>
 
     <main id="castmain">
-        <h3>MAIN CAST:</h3>
-        <section class="cop">
-            <img src="image/cast1.jpg" alt="">
-            <div>
-                <h2>Matthew McConaughey </h2>
-                <p> as Joseph Cooper (referred only to as "Cooper" or "Coop" in the film), a widowed NASA pilot who,
-                    after the agency was closed by the government, has become a farmer.
-                </p>
-            </div>
-        </section>
+      <h3>MAIN CAST:</h3>
+      <section class="cop">
+        <img src="image/cast1.jpg" alt="" />
+        <div>
+          <h2>Matthew McConaughey</h2>
+          <p>
+            as Joseph Cooper (referred only to as "Cooper" or "Coop" in the
+            film), a widowed NASA pilot who, after the agency was closed by the
+            government, has become a farmer.
+          </p>
+        </div>
+      </section>
 
-        <section class="cop2">
-            <img src="image/cast2.jpg" alt="">
-            <div>
-                <h2>Anne Hathaway </h2>
-                <p>as Amelia Brand, a NASA scientist and astronaut.
-                </p>
-            </div>
-        </section>
+      <section class="cop2">
+        <img src="image/cast2.jpg" alt="" />
+        <div>
+          <h2>Anne Hathaway</h2>
+          <p>as Amelia Brand, a NASA scientist and astronaut.</p>
+        </div>
+      </section>
 
-        <section class="cop3">
-            <img src="image/cast3.jpg" alt="">
-            <div>
-                <h2>Jessica Chastain </h2>
-                <p>as Murphy Cooper, Joseph's younger daughter, who eventually becomes a Plan A scientist at NASA.
-                </p>
-            </div>
-        </section>
+      <section class="cop3">
+        <img src="image/cast3.jpg" alt="" />
+        <div>
+          <h2>Jessica Chastain</h2>
+          <p>
+            as Murphy Cooper, Joseph's younger daughter, who eventually becomes
+            a Plan A scientist at NASA.
+          </p>
+        </div>
+      </section>
 
-        <section class="cop4 list-mv01">
-            <img src="image/cast5.jpg" alt="">
-            <div>
-                <h2>Michael Caine </h2>
-                <p>as Professor Brand, a high-ranking NASA scientist, ideator of Plan A, former mentor of Cooper and
-                    father of Amelia.
-                </p>
-            </div>
-        </section>
+      <section class="cop4 list-mv01">
+        <img src="image/cast5.jpg" alt="" />
+        <div>
+          <h2>Michael Caine</h2>
+          <p>
+            as Professor Brand, a high-ranking NASA scientist, ideator of Plan
+            A, former mentor of Cooper and father of Amelia.
+          </p>
+        </div>
+      </section>
 
-        <section class="cop5 list-mv01">
-            <img src="image/cast4.jpg" alt="">
-            <div>
-                <h2>Mackenzie Foy </h2>
-                <p>as young Murphy. </p>
-            </div>
-        </section>
+      <section class="cop5 list-mv01">
+        <img src="image/cast4.jpg" alt="" />
+        <div>
+          <h2>Mackenzie Foy</h2>
+          <p>as young Murphy.</p>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
