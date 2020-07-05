@@ -2,84 +2,90 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="css/reset.css" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
-  <title>Document</title>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(".bxslider").bxSlider({
-        auto: true,
-        mode: "fade",
-        speed: "300",
-      });
-    });
-  </script>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        .div {
+            width: 100%;
+            height: 937px;
+            background-repeat: no-repeat;
+            background-image: url("image/1.jpg");
+            animation: frams 20s infinite;
+        }
+
+        @keyframes frams {
+            0% {
+                background-image: url("image/1.jpg");
+                background-size: 100% 100%;
+                background-repeat: no-repeat
+            }
+
+            33% {
+                background-image: url("image/2.jpg");
+                background-size: 100% 100%;
+                background-repeat: no-repeat
+            }
+
+            66% {
+                background-image: url("image/3.jpg");
+                background-size: 100% 100%;
+                background-repeat: no-repeat
+            }
+
+            100% {
+                background-image: url("image/1.jpg");
+                background-size: 100% 100%;
+                background-repeat: no-repeat
+            }
+        }
+    </style>
 </head>
 
-<body>
-  <header>
-    <img src="image/logo2.png" alt="" class="logo" />
+<header>
+    <img src="image/logo2.png" alt="" class="logo">
     <nav>
-      <ul class="navlinks">
-        <li><a href="">Home</a></li>
-        <li><a href="">Introduction</a></li>
-        <li><a href="">Story</a></li>
-        <li><a href="">cast</a></li>
-      </ul>
+        <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Introduction</a></li>
+            <li><a href="">Story</a></li>
+            <li><a href="cast.html">cast</a></li>
+        </ul>
     </nav>
     <a href="#" class="cta"><button id="navbutton">content</button></a>
-  </header>
+</header>
 
-  <main>
-    <div id="asdasd">
-      <ul class="bxslider">
-        <li><img src="image/1.jpg" /></li>
-        <li><img src="image/2.jpg" /></li>
-        <li><img src="image/3.jpg" /></li>
-      </ul>
-    </div>
-    <div id="center">
-      <h1>Intersteller</h1>
-      <p class="txt">
-        In the near future around the American Midwest, Cooper, an ex-science
-        engineer and pilot, is tied to his farming land with his daughter
-        Murph and son Tom. As devastating sandstorms ravage Earth's crops, the
-        people of Earth realize their life here is coming to an end as food
-        begins to run out. Eventually stumbling upon a N.A.S.A. base near
-        Cooper's home, he is asked to go on a daring mission with a few other
-        scientists into a wormhole because of Cooper's scientific intellect
-        and ability to pilot aircraft unlike the other crew members. In order
-        to find a new home while Earth decays, Cooper must decide to either
-        stay, or risk never seeing his children again in order to save the
-        human race by finding another habitable planet.
-      </p>
-      <div class="buttons">
-        <button class="mainbutton">WATCH NOW</button>
-        <button class="mainbutton">ADD ME</button>
-      </div>
-    </div>
+<body>
+    <div id="father">
+        <div class="div">
+            <div id="center">
+                <H1>Intersteller</H1>
+                <p class="txt">In the near future around the American Midwest, Cooper, an ex-science engineer and pilot,
+                    is
+                    tied to his farming land with his daughter Murph and son Tom. As devastating sandstorms ravage
+                    Earth's
+                    crops, the people of Earth realize their life here is coming to an end as food begins to run out.
+                    Eventually stumbling upon a N.A.S.A. base near Cooper's home, he is asked to go on a daring mission
+                    with
+                    a few other scientists into a wormhole because of Cooper's scientific intellect and ability to pilot
+                    aircraft unlike the other crew members. In order to find a new home while Earth decays, Cooper must
+                    decide to either stay, or risk never seeing his children again in order to save the human race by
+                    finding another habitable planet.
+                </p>
+                <div class="buttons">
+                    <a href="watch.html"><button class="mainbutton">WATCH NOW</button></a>
+                    <button class="mainbutton">ADD ME</button>
+                </div>
+            </div>
+        </div>
 
-    <!-- 
-    <div class="center">
-      <H1>Intersteller</H1>
-      <p class="text">Earth's future has been riddled by disasters, famines, and droughts. There is only one way to
-        ensure
-        mankind's.survival: Interstellar travel. A newly discovered wormhole in the far reaches of our solar system
-        allows
-        a team of astronauts to go where no man has gone before, a planet that may have the right environment to sustain
-        human life.
-      </p>
-      <div class="buttons">
-        <button class="mainbutton">WATCH NOW</button>
-        <button class="mainbutton">ADD ME</button>
-      </div>
-    </div> -->
-  </main>
+    </div>
 </body>
 
 </html>
