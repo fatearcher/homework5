@@ -1,6 +1,6 @@
-/* index page */
+/* Index page */
 
-/* Navigation  */
+/* ↓ Navigation  Beginning*/
 .logo {
   height: 50px;
   margin-left: 40px;
@@ -65,7 +65,9 @@ header {
   background-color: rgba(0, 122, 194, 0.8);
 }
 
-/* Button  */
+/* ↑ Navigation  End*/
+
+/* ↓ Button Beginning */
 .mainbutton {
   position: relative;
   height: 50px;
@@ -127,13 +129,14 @@ header {
   }
 }
 
+/* ↑ Button End */
+
 h1 {
   font-size: 40px;
   letter-spacing: 25px;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   color: #ffbb00;
 }
-
 
 .txt {
   font-size: 20px;
@@ -160,7 +163,9 @@ div#center {
   margin: 50px 0;
 }
 
-/* cast page */
+/* ↑ Index page End */
+
+/* ↓ cast page */
 
 #videoBG {
   width: 100%;
@@ -177,7 +182,8 @@ div#center {
   color: #fff;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.4);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #castmain h2 {
@@ -187,7 +193,7 @@ div#center {
   text-align: center;
   font-size: 30px;
   color: #ffbb00;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   letter-spacing: 2px;
 }
 
@@ -198,7 +204,7 @@ div#center {
   margin: 60px 0px;
   font-size: 40px;
 
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
 }
 
 #castmain p {
@@ -208,7 +214,8 @@ div#center {
   text-align: center;
   margin: 0 auto;
   line-height: 25px;
-
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #castmain img {
@@ -220,8 +227,6 @@ div#center {
   margin-bottom: 140px;
 }
 
-
-
 .cop,
 .cop2,
 .cop3,
@@ -230,7 +235,22 @@ div#center {
   display: flex;
 }
 
-/* watch now */
+.list-mv01 {
+  transition: 0.8s;
+  opacity: 0;
+  transform: translate(0, 60px);
+  -webkit-transform: translate(0, 60px);
+}
+
+.mv01 {
+  opacity: 1;
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+}
+
+/* ↑ cast page End*/
+
+/* ↓ Watch Now Page*/
 
 #watchnow {
   width: 100%;
@@ -239,15 +259,60 @@ div#center {
   z-index: -1;
 }
 
-.list-mv01 {
-  transition: .8s;
-  opacity: 0;
-  transform: translate(0, 60px);
-  -webkit-transform: translate(0, 60px);
+/* 
+@media (min-a:16/9) {
+  #watchnow {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.mv01 {
-  opacity: 1.0;
-  transform: translate(0, 0);
-  -webkit-transform: translate(0, 0);
+
+@media(max-aspect-ratio:16/9) {
+  #watchnow {
+    width: auto;
+    height: 100%;
+  }
+} */
+
+/* ↑ Watch Now Page End*/
+
+/* ↓ Introduction page */
+
+#introductionmain {
+  width: 1100px;
+  /* border: 1px red solid; */
+  margin: 70px auto;
+}
+
+.about {
+  display: flex;
+}
+
+.about h3 {
+  color: #ffbb00;
+  font-size: 40px;
+  font-family: "PT Serif", serif;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+}
+
+.about p {
+  color: #fff;
+}
+.aboutphoto {
+  /* border: 1px red solid; */
+  width: 340px;
+}
+.aboutphoto img {
+  margin: 0 auto;
+  display: block;
+}
+
+.abouttxt {
+  /* border: 1px red solid; */
+  width: 640px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 30px;
 }
