@@ -134,6 +134,7 @@ h1 {
   color: #ffbb00;
 }
 
+
 .txt {
   font-size: 20px;
   color: #ffbb00;
@@ -150,7 +151,9 @@ div.div {
 
 div#center {
   width: 600px;
-  margin-right: 50px;
+  /* margin-right: 50px; */
+  position: absolute;
+  right: 70px;
 }
 
 #center h1 {
