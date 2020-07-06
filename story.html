@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        var arrLang = {
+            'en': {
+                'home': 'Home',
+                'cast': 'Cast',
+                'introduction': 'Introduction',
+                'story1': 'Story',
+                'story': 'STORY',
+
+            },
+            'jp': {
+                'home': 'ホームページ',
+                'cast': 'キャスト',
+                'introduction': 'イントロダクション',
+                'story1': 'ストーリー',
+                'story': 'ストーリー',
+            }
+        };
+
+        // Process translation
+        $(function () {
+            $('.translate').click(function () {
+                var lang = $(this).attr('id');
+
+                $('.lang').each(function (index, item) {
+                    $(this).text(arrLang[lang][$(this).attr('key')]);
+                });
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="  https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+    <script>
+        $(function () {
+            $(".list-mv01").on("inview", function (
+                event,
+                isInView,
+                visiblePartX,
+                visiblePartY
+            ) {
+                if (isInView) {
+                    $(this).stop().addClass("mv01");
+                } else {
+                    $(this).stop().removeClass("mv01");
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body style="background-color: black;">
+    <header>
+        <img src="image/logo2.png" alt="" class="logo">
+        <nav>
+            <ul class="navlinks">
+                <a href="index.html">
+                    <li class="lang" key="home">Home</li>
+                </a>
+                <a href="cast2.html">
+                    <li class="lang" key="cast">Cast</li>
+                </a>
+                <a href="introduction.html">
+                    <li class="lang" key="introduction">Introduction</li>
+                </a>
+                <a href="story.html">
+                    <li class="lang" key="story1">Story</li>
+                </a>
+            </ul>
+        </nav>
+        <a href="#" class="cta"><button id="en" class="navbutton translate">English</button></a>
+        <a href="#" class="cta"><button id="jp" class="navbutton translate">日本語</button></a>
+    </header>
+
+    <main id="introductionmain">
+        <section class="about">
+            <div class="aboutphoto">
+                <img src="image/story.jpg" alt="">
+            </div>
+            <div class="abouttxt">
+                <h3 class="lang" key="story">STORY</h3>
+                <p>In 2067,crop blights and dust storms threaten humanity's survival. Corn is the last viable crop.
+                    The world has also regressed into a post-truth society where younger generations are taught ideas
+                    such as the Apollo moon missions were faked. Widowed engineer and former NASA pilot Joseph Cooper is
+                    now a farmer. Living with him are his father-in-law, Donald; his 15-year-old son, Tom Cooper, and
+                    10-year-old daughter, Murphy "Murph" Cooper. After a dust storm, strange dust patterns inexplicably
+                    appear on Murphy's bedroom floor; she attributes the anomaly to a ghost. Cooper eventually deduces
+                    the patterns were caused by gravity variations and that they are a binary code for geographic
+                    coordinates. Cooper follows the coordinates to a secret NASA facility headed by Professor John
+                    Brand, Cooper's former supervisor. Professor Brand says gravitational anomalies have happened
+                    elsewhere. 48 years earlier, unknown beings positioned a wormhole near Saturn, opening a path to a
+                    distant galaxy with twelve potentially habitable worlds located near a black hole named Gargantua.
+                    Twelve volunteers traveled through the wormhole to individually survey the planets. Astronauts
+                    Miller, Edmunds, and Mann reported positive results. Based on their data, Professor Brand conceived
+                    two plans to ensure humanity's survival. Plan A involves developing a gravitational propulsion
+                    theory to propel colonies into space, while Plan B involves launching the Endurance spacecraft
+                    carrying 5,000 frozen human embryos to colonize a habitable planet.
+                    <br>
+                    <br>
+                    Cooper is recruited to pilot the Endurance. The crew includes scientists Dr. Amelia Brand (Professor
+                    Brand's daughter), Dr. Romilly, Dr. Doyle, and robots TARS and CASE. Before leaving, Cooper gives a
+                    distraught Murphy his wristwatch to compare their relative time for when he returns. After
+                    traversing the wormhole, Romilly studies the black hole while Cooper, Doyle, and Brand descend in a
+                    landing craft to investigate Miller's planet, an ocean world. After finding wreckage from Miller's
+                    ship, a gigantic tidal wave kills Doyle and delays the lander's departure. Due to the proximity of
+                    the black hole, time is severely
+                    the black hole, time is severely dilated: as a result, 23 years have
+                    elapsed for Romilly on
+                    Endurance by the time Cooper and Brand return.
+                    the black hole, time is severely</p>
+                <br>
+                <br>
+                <p class="list-mv01">
+                    Edmunds' planet has slightly better telemetry, while Mann broadcasts positive data. Cooper rules
+                    to
+                    use their remaining fuel to reach Mann's planet. On Mann's planet, the Endurance crew revive him
+                    from cryostasis. Meanwhile, Murph, now a scientist, transmits a message announcing Professor
+                    Brand
+                    has died. She has learned that Plan A, requiring unattainable data from within a black hole, was
+                    never viable. Plan B was always Professor Brand's only option. Murphy accuses Brand and Cooper
+                    of
+                    knowing those left on Earth were doomed. Mann's frozen planet is uninhabitable; he had sent
+                    falsified data in order to be rescued. Mann attempts to murder Cooper, then escapes in a lander
+                    and
+                    heads for Endurance. Romilly is killed by Mann's booby trap and Brand and Cooper race to the
+                    Endurance in another lander. Mann dies during a failed manual docking operation, severely
+                    damaging
+                    Endurance. After a difficult docking maneuver, Cooper regains control of the damaged but
+                    functional
+                    Endurance.
+                </p>
+                <br>
+                <br>
+                <p class="list-mv01">
+                    Miller's planet orbiting Gargantua
+                    With insufficient fuel to reach Edmunds' planet, they use a slingshot maneuver so close to
+                    Gargantua
+                    that time dilation adds another 51 years. In the process, Cooper and TARS jettison themselves to
+                    shed weight and ensure Endurance reaches Edmunds' planet. Slipping through the event horizon of
+                    Gargantua, they eject from their respective craft and find themselves inside a massive
+                    tesseract,
+                    constructed by future humans. Across different time periods, Cooper can see through the
+                    bookcases of
+                    Murphy's old room on Earth and weakly interact with its gravity. Cooper realizes he was Murphy's
+                    "ghost" and manipulates the second hand of the wristwatch he gave her, using Morse code to
+                    transmit
+                    the quantum data that TARS collected from inside the event horizon. Cooper and TARS are ejected
+                    from
+                    the tesseract. Cooper is picked up and awakens on a space habitat orbiting Saturn, where he
+                    reunites
+                    with an elderly Murphy. Using the quantum data sent by Cooper, the younger Murphy had solved the
+                    gravitational propulsion theory for Plan A, enabling humanity's exodus and survival. Nearing
+                    death
+                    and with her own family, Murphy urges Cooper to return to Brand. Cooper and TARS take a
+                    spacecraft
+                    to rejoin Brand and CASE on Edmunds' habitable planet.
+                    Visual
+                    Effects, Best
+                    Production Design, Best Sound Mixing and Best Sound Editing.
+                    the black hole, time is severely
+                </p>
+                </p>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html>
