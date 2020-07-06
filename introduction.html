@@ -7,6 +7,37 @@
     <title>Document</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        var arrLang = {
+            'en': {
+                'home': 'Home',
+                'cast': 'Cast',
+                'introduction': 'Introduction',
+                'about': 'Introduction',
+
+            },
+            'jp': {
+                'home': 'ホームページ',
+                'cast': 'キャスト',
+                'introduction': 'イントロダクション',
+                'about': 'アバウト',
+            }
+        };
+
+        // Process translation
+        $(function () {
+            $('.translate').click(function () {
+                var lang = $(this).attr('id');
+
+                $('.lang').each(function (index, item) {
+                    $(this).text(arrLang[lang][$(this).attr('key')]);
+                });
+            });
+        });
+    </script>
+
     <script type="text/javascript" src="  https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
     <script>
@@ -25,6 +56,7 @@
             });
         });
     </script>
+
 </head>
 
 <body style="background-color: black;">
@@ -32,13 +64,19 @@
         <img src="image/logo2.png" alt="" class="logo">
         <nav>
             <ul class="navlinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cast.html">Cast</a></li>
-                <li><a href="introduction.html">Introduction</a></li>
-                <li><a href="">Story</a></li>
+                <a href="index.html">
+                    <li class="lang" key="home">Home</li>
+                </a>
+                <a href="cast.html">
+                    <li class="lang" key="cast">Cast</li>
+                </a>
+                <a href="introduction.html">
+                    <li class="lang" key="introduction">Introduction</li>
+                </a>
             </ul>
         </nav>
-        <a href="#" class="cta"><button id="navbutton">contact</button></a>
+        <a href="#" class="cta"><button id="en" class="navbutton translate">English</button></a>
+        <a href="#" class="cta"><button id="jp" class="navbutton translate">日本語</button></a>
     </header>
 
     <main id="introductionmain">
@@ -47,7 +85,7 @@
                 <img src="image/about.jpeg" alt="">
             </div>
             <div class="abouttxt">
-                <h3>ABOUT</h3>
+                <h3 class="lang" key="about">ABOUT</h3>
                 <p>With our time on Earth coming to an end, a team of explorers undertakes the most important mission in
                     human history:
                     traveling beyond this galaxy to discover whether mankind has a future among the stars.

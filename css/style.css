@@ -8,7 +8,7 @@
 
 li,
 a,
-#navbutton {
+.navbutton {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -51,7 +51,7 @@ header {
   color: rgb(0, 122, 194);
 }
 
-#navbutton {
+.navbutton {
   padding: 9px 25px;
   background-color: rgba(0, 122, 194, 1);
   border: none;
@@ -61,7 +61,7 @@ header {
   margin-right: 30px;
 }
 
-#navbutton:hover {
+.navbutton:hover {
   background-color: rgba(0, 122, 194, 0.8);
 }
 
@@ -131,14 +131,14 @@ header {
 
 /* ↑ Button End */
 
-h1 {
+#center h1 {
   font-size: 40px;
   letter-spacing: 25px;
   font-family: "PT Serif", serif;
   color: #ffbb00;
 }
 
-.txt {
+#center .txt {
   font-size: 20px;
   color: #ffbb00;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -151,6 +151,46 @@ div.div {
   justify-content: flex-end;
   align-items: center;
 }
+
+/* 轮播部分 beginning */
+/* 
+.div {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-image: url("image/1.jpg");
+  animation: frams 20s infinite;
+}
+
+@keyframes frams {
+  0% {
+    background-image: url("image/1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat
+  }
+
+  33% {
+    background-image: url("image/2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat
+  }
+
+  66% {
+    background-image: url("image/3.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat
+  }
+
+  100% {
+    background-image: url("image/1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat
+  }
+} */
+
+/* 轮播部分 End */
 
 div#center {
   width: 600px;
@@ -300,10 +340,12 @@ div#center {
 .about p {
   color: #fff;
 }
+
 .aboutphoto {
   /* border: 1px red solid; */
   width: 340px;
 }
+
 .aboutphoto img {
   margin: 0 auto;
   display: block;
