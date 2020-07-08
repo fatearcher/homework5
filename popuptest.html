@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .bg-modal {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 0.7;
+            position: absolute;
+            top: 0;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+
+        .modal-content {
+            width: 500px;
+            height: 300px;
+            background-color: white;
+            border-radius: 4px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        input {
+            width: 50%;
+            display: block;
+            margin: 15px auto;
+        }
+
+        .close {
+            position: absolute;
+            top: 0;
+            right: 14px;
+            font-size: 42px;
+            transform: rotate(45deg);
+            cursor: pointer;
+            /* 变成手势按钮; */
+
+        }
+    </style>
+</head>
+
+
+<div class="buttons">
+    <a href="watch.html"><button class="mainbutton lang" key="watch">WATCH NOW</button></a>
+    <a href="" id="pop-up" class="pop-up"><button class="mainbutton lang" key="add">ADD ME</button></a>
+    <script>
+        document.getElementById("pop-up").addEventListener("click", function () {
+            document.querySelector(".bg-modal").style.display = "flex";
+        });
+    </script>
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+            <script>
+                document.querySelector(".close").addEventListener("click", function () {
+                    document.querySelector(".bg-modal").style.display = "none";
+                });
+            </script>
+            <h2>Login</h2>
+            <form action="">
+                <form action="">
+                    <div class="item">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="E-MAIL">
+                        <a style="color: black;" href="" class="button">submit</a>
+                </form>
+        </div>
+    </div>
+    </body>
+
+</html>
